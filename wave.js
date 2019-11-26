@@ -9,11 +9,11 @@ class waveTest {
       }
     }
 
-    for (var i = 0; i < Wave.length; i++) {
+    for (var i = 0; i < wave.length; i++) {
       ConfirmitClass.lg.LogDebug("to je vonooo " +i);
     }
-    /*
 
+/*
         var X = [], Y = [];
 
         X.push ('Methodology'{totals:false; title:true}^[N]');
