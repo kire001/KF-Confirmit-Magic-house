@@ -20,7 +20,7 @@ class waveTest {
       Y.push ('[SEGMENT]{label:"'+ wave[i] +'"; expression:' + report.TableUtils.EncodeJsString(expression) + '}');
     }
   Y.push ('[SEGMENT]{label:"tests"}');
-    var y = Y.join('+');
+    var y = X.join('+');
     var x = X.join('');
 
       var expr = [y, x].join('^');
