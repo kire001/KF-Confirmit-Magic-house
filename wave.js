@@ -15,8 +15,8 @@ class waveTest {
 
     for (var i = 0; i < wave.length; i++) {
       ConfirmitClass.lg.LogDebug("to je vonooo " + wave[i]);
-      var expression = String('Wave = ' + wave[i])
-        ConfirmitClass.lg.LogDebug("Striiiing " + wave[i]);
+      var expression = String('Wave = "' + wave[i] + '"')
+        ConfirmitClass.lg.LogDebug("Striiiing " + expression);
       Y.push ('[SEGMENT]{label:"'+ wave[i] +'"; expression:' + report.TableUtils.EncodeJsString(expression) + '}');
     }
 
