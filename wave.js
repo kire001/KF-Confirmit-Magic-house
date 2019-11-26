@@ -10,7 +10,7 @@ class waveTest {
       }
     }
       var X = [], Y = [];
-        X.push ('Wave{totals:false; title:true}/*^[N]*/');
+        X.push ('Wave{totals:false; title:true}');
 
     for (var i = 0; i < wave.length; i++) {
       ConfirmitClass.lg.LogDebug("to je vonooo " + wave[i]);
