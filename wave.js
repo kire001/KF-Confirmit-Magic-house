@@ -20,8 +20,9 @@ class waveTest {
       Y.push ('[SEGMENT]{label:"'+ wave[i] +'"; expression:' + report.TableUtils.EncodeJsString(expression) + '}');
     }
   Y.push ('[SEGMENT]{label:"tests"}');
-    var y = X.join('+');
-    var x = X.join('');
+  Y.push ('[SEGMENT]{label:"tests2"; expression:' + report.TableUtils.EncodeJsString('Wave = "2019"') + '}');
+    var y = X.join('');
+    var x = Y.join('+');
 
       var expr = [y, x].join('^');
       table.AddHeaders(report, 'ds0', expr);
