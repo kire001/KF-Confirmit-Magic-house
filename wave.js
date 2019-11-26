@@ -3,14 +3,14 @@ class waveTest {
   static function testWaves(table) {
     var wave = [];
     for (var i in Config.Wave.Codes) {
-        ConfirmitClass.lg.LogDebug("iiiicko " +i);
-      if (i != null) {
+        ConfirmitClass.lg.LogDebug("iiiicko " +Config.Wave[i]);
+      if (Config.Wave[i] != null) {
         wave.push(i)
       }
     }
 
     for (var i = 0; i < wave.length; i++) {
-      ConfirmitClass.lg.LogDebug("to je vonooo " +i);
+      ConfirmitClass.lg.LogDebug("to je vonooo " + wave[i]);
     }
 
 /*
