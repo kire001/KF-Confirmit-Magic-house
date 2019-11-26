@@ -1,14 +1,28 @@
-class waveTest{
+class waveTest {
 
-static function testWaves(){
-var waveCurrent = Config.Wave.Codes.Current;
-var waveTrend1 = Config.Wave.Codes.Previous;
-var waveTrend2 = Config.Wave.Codes.Previous2;
-var waveTrend3 = Config.Wave.Codes.Previous3;
+  static function testWaves(table) {
+    var wave = [];
+    for (var i in Config.Wave.Codes) {
+        ConfirmitClass.lg.LogDebug("iiiicko " +i);
+      if (i != null) {
+        wave.push(i)
+      }
+    }
 
-ConfirmitClass.lg.LogDebug(waveCurrent);
-ConfirmitClass.lg.LogDebug(waveTrend1);
-ConfirmitClass.lg.LogDebug(waveTrend2);
-ConfirmitClass.lg.LogDebug(waveTrend3);
-}
-}
+    for (var i = 0; i < Wave.length; i++) {
+      ConfirmitClass.lg.LogDebug("to je vonooo " +i);
+    }
+    /*
+
+        var X = [], Y = [];
+
+        X.push ('Methodology'{totals:false; title:true}^[N]');
+        X.push ('/('+ Xsub.join('') +')')
+
+
+        var y = Y.join('+');
+        var x = X.join('');
+        var expr = [y, x].join('^');
+        table.AddHeaders(report, 'ds0', expr);*/
+      }
+    }
