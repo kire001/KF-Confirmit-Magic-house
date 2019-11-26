@@ -1,6 +1,6 @@
 class waveTest{
 
-function testWaves(){
+static function testWaves(){
 var waveCurrent = Config.Wave.Codes.Current;
 var waveTrend1 = Config.Wave.Codes.Previous;
 var waveTrend2 = Config.Wave.Codes.Previous2;
