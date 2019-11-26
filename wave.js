@@ -17,7 +17,7 @@ class waveTest {
       Y.push ('[SEGMENT]{label:"'+ wave[i] +'"; expression:' + report.TableUtils.EncodeJsString('methodology = "'+wave[i]+ '"') + '}');
     }
 
-      var expr = [y, x].join('^');
+      var expr = [Y, X].join('^');
       table.AddHeaders(report, 'ds0', expr);
 /*
 
