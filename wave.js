@@ -19,7 +19,7 @@ class waveTest {
         ConfirmitClass.lg.LogDebug("Striiiing " + expression);
       Y.push ('[SEGMENT]{label:"'+ wave[i] +'"; expression:' + report.TableUtils.EncodeJsString(expression) + '}');
     }
-
+  Y.push ('[SEGMENT]{label:"tests"}');
     var y = Y.join('+');
     var x = X.join('');
 
