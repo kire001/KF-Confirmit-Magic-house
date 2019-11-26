@@ -4,7 +4,7 @@ class waveTest {
     var wave = [];
     for (var i in Config.Wave.Codes) {
       ConfirmitClass.lg.LogDebug("iiiicko " + i);
-      ConfirmitClass.lg.LogDebug("iiiicko " +Config.Wave['"'+i+'"']);
+      ConfirmitClass.lg.LogDebug("iiiicko " +Config.Wave.[i]);
       if (Config.Wave[i] != null) {
         wave.push(i)
       }
