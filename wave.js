@@ -6,7 +6,7 @@ class waveTest {
       ConfirmitClass.lg.LogDebug("iiiicko " + i);
       ConfirmitClass.lg.LogDebug("iiiicko " +Config.Wave.Codes[i]);
       if (Config.Wave.Codes[i] != "") {
-        wave.push(i)
+        wave.push(Config.Wave.Codes[i])
       }
     }
       var X = [], Y = [];
@@ -17,7 +17,10 @@ class waveTest {
       Y.push ('[SEGMENT]{label:"'+ wave[i] +'"; expression:' + report.TableUtils.EncodeJsString('methodology = "'+wave[i]+ '"') + '}');
     }
 
-      var expr = [Y, X].join('^');
+    var y = Y.join('+');
+    var x = X.join('');
+
+      var expr = [y, x].join('^');
       table.AddHeaders(report, 'ds0', expr);
 /*
 
