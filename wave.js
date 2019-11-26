@@ -10,11 +10,12 @@ class waveTest {
       }
     }
       var X = [], Y = [];
-        X.push ('Wave{totals:false; title:true}');
+      //  X.push ('Wave{totals:false; title:true}');
+            X.push ('[N]');
 
     for (var i = 0; i < wave.length; i++) {
       ConfirmitClass.lg.LogDebug("to je vonooo " + wave[i]);
-      Y.push ('[SEGMENT]{label:"'+ wave[i] +'"; expression:' + report.TableUtils.EncodeJsString('methodology = "'+wave[i]+ '"') + '}');
+      Y.push ('[SEGMENT]{label:"'+ wave[i] +'"; expression:' + report.TableUtils.EncodeJsString('Wave = "'+wave[i]+ '"') + '}');
     }
 
     var y = Y.join('+');
