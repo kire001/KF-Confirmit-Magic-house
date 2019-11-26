@@ -1,6 +1,6 @@
 class waveTest {
 
-  static function testWaves(table) {
+  static function testWaves(table,report) {
     var wave = [];
     for (var i in Config.Wave.Codes) {
       ConfirmitClass.lg.LogDebug("iiiicko " + i);
