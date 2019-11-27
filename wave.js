@@ -28,7 +28,7 @@ class waveTest {
     var expr = [y, x].join('^');
     table.AddHeaders(report, 'ds0', expr);
 
-    var datapoints = report.TableUtils.GetColumnValues(table, 0);
+    var datapoints = report.TableUtils.GetColumnValues(table.Name, 0);
     var k;
     ConfirmitClass.lg.LogDebug("pocet hodnot ve sloupci: " + datapoints.length);
     for (var k = 0; k < datapoints.length; k++) {
