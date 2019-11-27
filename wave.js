@@ -34,7 +34,7 @@ var headers = table.ColumnHeaders;
 var rows= table.RowHeaders;
 ConfirmitClass.lg.LogDebug("pocetSloupcu " + headers.Count +"  radek: " +rows.Count);
 
-ConfirmitClass.lg.LogDebug("hodnota v 1-1: " + table.GetContentCellValue(1,1).Value);
+ConfirmitClass.lg.LogDebug("hodnota v 1-1: " + table.GetContentCellValue(1,1));
 
    var datapoints = report.TableUtils.GetColumnValues(table.Name,1);
      ConfirmitClass.lg.LogDebug("datapoints nacteny");
