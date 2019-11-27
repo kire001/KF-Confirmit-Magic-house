@@ -39,7 +39,7 @@ class waveTest {
   }
 
   static  function testWaves2(table, report) {
-    var datapoints = report.TableUtils.GetColumnValues(table.Name, 1);
+    var datapoints = report.TableUtils.GetColumnValues("myTable", 0);
     ConfirmitClass.lg.LogDebug("datapoints nacteny");
     //report.TableUtils.GetColumnValues('ResponseRate',1);
     //  var k;
