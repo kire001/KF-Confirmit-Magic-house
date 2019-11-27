@@ -2,14 +2,14 @@ class waveTest {
 
   static  function testWaves1(table, report) {
     var wave = [];
-    wave = getTrendIDs()
+    wave = getTrendIDs();
     /*for (var i in Config.Wave.Codes) {
       ConfirmitClass.lg.LogDebug("iiiicko " + i);
       ConfirmitClass.lg.LogDebug("iiiicko " + Config.Wave.Codes[i]);
       if (Config.Wave.Codes[i] != "") {
         wave.push(Config.Wave.Codes[i])
-      }*/
-    }
+      }
+    }*/
     var X = [],
       Y = [];
     //  X.push ('Wave{totals:false; title:true}');
