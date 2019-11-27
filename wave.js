@@ -20,22 +20,17 @@ class waveTest {
       Y.push ('[SEGMENT]{label:"'+ wave[i] +'"; expression:' + report.TableUtils.EncodeJsString(expression) + '}');
     }
   Y.push ('[SEGMENT]{label:"tests"}');
-  Y.push ('[SEGMENT]{label:"tests2"; expression:' + report.TableUtils.EncodeJsString('Wave = "2019"') + '}');
-    var y = X.join('');
-    var x = Y.join('+');
+  //Y.push ('[SEGMENT]{label:"tests2"; expression:' + report.TableUtils.EncodeJsString('Wave = "2016"') + '}');
+    var x = X.join('');
+    var y = Y.join('+');
 
       var expr = [y, x].join('^');
       table.AddHeaders(report, 'ds0', expr);
-/*
 
-
-        X.push ('Methodology'{totals:false; title:true}^[N]');
-        X.push ('/('+ Xsub.join('') +')')
-
-
-        var y = Y.join('+');
-        var x = X.join('');
-        var expr = [y, x].join('^');
-        table.AddHeaders(report, 'ds0', expr);*/
+      var datapoints =  table.GetColumnValues(table,0)
+      var k;
+      log.LogDebug("pocet hodnot ve sloupci": " + datapoints.length);
+      for (var k = 0; k < datapoints.length; k++)
+      log.LogDebug(datapoints[k])
       }
     }
