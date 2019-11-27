@@ -76,8 +76,9 @@ class waveTest {
       if (Config.Wave.Codes[i] != "") {
         wave.push(Config.Wave.Codes[i])
       }
-      return wave;
+
     }
+    return wave;
   }
 
 }
