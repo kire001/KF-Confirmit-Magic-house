@@ -41,7 +41,7 @@ class waveTest {
 
   static  function testWaves2(report) {
     var wave=[];
-    var errorLog;
+    var errorLog="";
     //  ConfirmitClass.lg.LogDebug("1111111111111");
     //var values = report.TableUtils.GetColumnValues('rr_overall:ResponseRate',1);
     ConfirmitClass.lg.LogDebug("start testWaves2 script");
@@ -56,8 +56,8 @@ class waveTest {
     for (var k = 0; k < waveValues.length; k++) {
       if(waveValues[k].Value==0){
 
-        if (errorLog != undefined) {
-          errorLog=errorLog + ", "
+        if (errorLog != "") {
+          errorLog = errorLog + ", "
         }
 
         errorLog = errorLog + "Wave ";
