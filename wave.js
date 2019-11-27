@@ -30,15 +30,19 @@ class waveTest {
   ConfirmitClass.lg.LogDebug("tabulka vytvorena " +table.Name);
 
   //-----------------------------------------------------------------------
-var datapoints = table.ColumnHeaders;
-ConfirmitClass.lg.LogDebug("pocetSloupcu " + datapoints.Count);
-  /* var datapoints = report.TableUtils.GetColumnValues(table.Name,0);
+var headers = table.ColumnHeaders;
+var rows= table.RowHeaders;
+ConfirmitClass.lg.LogDebug("pocetSloupcu " + headers.Count +"  radek: " +rows.Count);
+
+ConfirmitClass.lg.LogDebug("hodnota v 1-1: " + table.GetContentCellValue(1,1).Value);
+
+   var datapoints = report.TableUtils.GetColumnValues(table.Name,1);
      ConfirmitClass.lg.LogDebug("datapoints nacteny");
     //report.TableUtils.GetColumnValues('ResponseRate',1);
   //  var k;
   //  ConfirmitClass.lg.LogDebug("pocet hodnot ve sloupci: " + datapoints.Count);
-    /*for (var k = 0; k < datapoints.length; k++) {
-      ConfirmitClass.lg.LogDebug(datapoints[k].Value)
-    }*/
+    for (var k = 0; k < datapoints.length; k++) {
+  ConfirmitClass.lg.LogDebug(datapoints[k].Value)
+    }
   }
 }
