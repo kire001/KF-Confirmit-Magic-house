@@ -32,9 +32,9 @@ class waveTest {
      ConfirmitClass.lg.LogDebug("datapoints nacteny");
     //report.TableUtils.GetColumnValues('ResponseRate',1);
     var k;
-    ConfirmitClass.lg.LogDebug("pocet hodnot ve sloupci: " + datapoints.Count);
-    for (var k = 0; k < datapoints.length; k++) {
+  //  ConfirmitClass.lg.LogDebug("pocet hodnot ve sloupci: " + datapoints.Count);
+    /*for (var k = 0; k < datapoints.length; k++) {
       ConfirmitClass.lg.LogDebug(datapoints[k].Value)
-    }
+    }*/
   }
 }
