@@ -39,8 +39,11 @@ class waveTest {
   }
 
   static  function testWaves2(report) {
+    ConfirmitClass.lg.LogDebug("1111111111111");
+    var values = report.TableUtils.GetColumnValues('ResponseRate',1);
+    ConfirmitClass.lg.LogDebug("22222222222222");
     var datapoints = report.TableUtils.GetColumnValues("myTable", 0);
-    ConfirmitClass.lg.LogDebug("datapoints nacteny");
+    ConfirmitClass.lg.LogDebug("3333333333333333");
     //report.TableUtils.GetColumnValues('ResponseRate',1);
     //  var k;
     //  ConfirmitClass.lg.LogDebug("pocet hodnot ve sloupci: " + datapoints.Count);
