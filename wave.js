@@ -1,6 +1,6 @@
 class waveTest {
 
-  static function testWaves(table, report) {
+  static  function testWaves(table, report) {
     var wave = [];
     for (var i in Config.Wave.Codes) {
       ConfirmitClass.lg.LogDebug("iiiicko " + i);
@@ -27,22 +27,26 @@ class waveTest {
 
     var expr = [y, x].join('^');
     table.AddHeaders(report, 'ds0', expr);
-  ConfirmitClass.lg.LogDebug("tabulka vytvorena " +table.Name);
+    ConfirmitClass.lg.LogDebug("tabulka vytvorena " + table.Name);
 
-  //-----------------------------------------------------------------------
-var headers = table.ColumnHeaders;
-var rows= table.RowHeaders;
-ConfirmitClass.lg.LogDebug("pocetSloupcu " + headers.Count +"  radek: " +rows.Count);
+    //-----------------------------------------------------------------------
+    //var headers = table.ColumnHeaders;
+    //var rows= table.RowHeaders;
+    //
+    //ConfirmitClass.lg.LogDebug("hodnota v 1-1: " + table.GetContentCellValue(1,1));
 
-ConfirmitClass.lg.LogDebug("hodnota v 1-1: " + table.GetContentCellValue(1,1));
 
-   var datapoints = report.TableUtils.GetColumnValues(table.Name,1);
-     ConfirmitClass.lg.LogDebug("datapoints nacteny");
+  }
+
+  static  function testWaves(table, report) {
+    var datapoints = report.TableUtils.GetColumnValues(table.Name, 1);
+    ConfirmitClass.lg.LogDebug("datapoints nacteny");
     //report.TableUtils.GetColumnValues('ResponseRate',1);
-  //  var k;
-  //  ConfirmitClass.lg.LogDebug("pocet hodnot ve sloupci: " + datapoints.Count);
+    //  var k;
+    //  ConfirmitClass.lg.LogDebug("pocet hodnot ve sloupci: " + datapoints.Count);
     for (var k = 0; k < datapoints.length; k++) {
-  ConfirmitClass.lg.LogDebug(datapoints[k].Value)
+      ConfirmitClass.lg.LogDebug(datapoints[k].Value)
     }
   }
+
 }
