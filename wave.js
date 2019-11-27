@@ -1,6 +1,6 @@
 class waveTest {
 
-  static  function testWaves(table, report) {
+  static  function testWaves1(table, report) {
     var wave = [];
     for (var i in Config.Wave.Codes) {
       ConfirmitClass.lg.LogDebug("iiiicko " + i);
@@ -38,7 +38,7 @@ class waveTest {
 
   }
 
-  static  function testWaves(table, report) {
+  static  function testWaves2(table, report) {
     var datapoints = report.TableUtils.GetColumnValues(table.Name, 1);
     ConfirmitClass.lg.LogDebug("datapoints nacteny");
     //report.TableUtils.GetColumnValues('ResponseRate',1);
