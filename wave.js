@@ -54,6 +54,8 @@ class waveTest {
     wave=getTrendIDs();
     ConfirmitClass.lg.LogDebug("pocet hodnot ve sloupci: " + waveValues.length);
     for (var k = 0; k < waveValues.length; k++) {
+    ConfirmitClass.lg.LogDebug("111:" + waveValues[k])
+    ConfirmitClass.lg.LogDebug("222:" + waveValues[k].Value)
       if(waveValues[k]==0){
 
         if (errorLog != "") {
@@ -67,7 +69,7 @@ class waveTest {
     }
 
     if (errorLog != undefined) {
-      errorLog="Wave " + errorLog + " does not conatain any data."
+      errorLog="Wave " + errorLog + " does not contain any data."
     }
   return errorLog;
   }
