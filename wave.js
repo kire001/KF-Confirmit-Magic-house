@@ -57,7 +57,7 @@ class waveTest {
       if(waveValues[k].Value==0){
 
         if (errorLog != undefined) {
-          error Log=errorLog + ", "
+          errorLog=errorLog + ", "
         }
 
         errorLog = errorLog + "Wave ";
