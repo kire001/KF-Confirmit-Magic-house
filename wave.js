@@ -60,7 +60,7 @@ class waveTest {
           errorLog = errorLog + ", "
         }
 
-        errorLog = errorLog + "Wave ";
+        errorLog = errorLog + wave[k];
         ConfirmitClass.lg.LogDebug("errorlog =" + errorLog + "k:" +k);
 
       }
