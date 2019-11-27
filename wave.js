@@ -1,6 +1,7 @@
 class waveTest {
 
-  static  function testWaves1(table, report) {
+  static
+  function testWaves1(table, report) {
     var wave = [];
     for (var i in Config.Wave.Codes) {
       ConfirmitClass.lg.LogDebug("iiiicko " + i);
@@ -38,18 +39,21 @@ class waveTest {
 
   }
 
-  static  function testWaves2(report) {
-    ConfirmitClass.lg.LogDebug("1111111111111");
-    var values = report.TableUtils.GetColumnValues('rr_overall:ResponseRate',1);
-    ConfirmitClass.lg.LogDebug("22222222222222");
-  var values = report.TableUtils.GetColumnValues('tester:myTable', 1);
-    ConfirmitClass.lg.LogDebug("3333333333333333");
-    //report.TableUtils.GetColumnValues('ResponseRate',1);
-    //  var k;
-    //  ConfirmitClass.lg.LogDebug("pocet hodnot ve sloupci: " + datapoints.Count);
-    /*for (var k = 0; k < datapoints.length; k++) {
-      ConfirmitClass.lg.LogDebug(datapoints[k].Value)
-    }*/
+  static
+  function testWaves2(report) {
+    //  ConfirmitClass.lg.LogDebug("1111111111111");
+    //var values = report.TableUtils.GetColumnValues('rr_overall:ResponseRate',1);
+    ConfirmitClass.lg.LogDebug("start testWaves2 script");
+
+    var waveValues = report.TableUtils.GetColumnValues('tester:myTable', 1);
+    ConfirmitClass.lg.LogDebug("get columns finished");
+
+
+    var k;
+    ConfirmitClass.lg.LogDebug("pocet hodnot ve sloupci: " + waveValues.Count);
+    for (var k = 0; k < waveValues.length; k++) {
+      ConfirmitClass.lg.LogDebug(waveValues[k].Value)
+    }
   }
 
 }
