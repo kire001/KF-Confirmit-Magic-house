@@ -27,13 +27,13 @@ class waveTest {
 
     var expr = [y, x].join('^');
     table.AddHeaders(report, 'ds0', expr);
-
-    var datapoints = report.TableUtils.GetColumnValues(table.Name,1);
+  ConfirmitClass.lg.LogDebug("tabulka vytvorena");
+  /*  var datapoints = report.TableUtils.GetColumnValues(table.Name,1);
     //report.TableUtils.GetColumnValues('ResponseRate',1);
     var k;
     ConfirmitClass.lg.LogDebug("pocet hodnot ve sloupci: " + datapoints.length);
     for (var k = 0; k < datapoints.length; k++) {
       ConfirmitClass.lg.LogDebug(datapoints[k])
-    }
+    }*/
   }
 }
