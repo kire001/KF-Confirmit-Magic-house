@@ -28,7 +28,7 @@ class waveTest {
     var expr = [y, x].join('^');
     table.AddHeaders(report, 'ds0', expr);
   ConfirmitClass.lg.LogDebug("tabulka vytvorena");
-   var datapoints = report.TableUtils.GetColumnValues('myTable',1);
+   var datapoints = report.TableUtils.GetColumnValues('myTable',0);
      ConfirmitClass.lg.LogDebug("datapoints nacteny");
     //report.TableUtils.GetColumnValues('ResponseRate',1);
     var k;
