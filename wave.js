@@ -3,12 +3,13 @@ class waveTest {
   static
   function testWaves1(table, report) {
     var wave = [];
-    for (var i in Config.Wave.Codes) {
+    wave = getTrendIDs()
+    /*for (var i in Config.Wave.Codes) {
       ConfirmitClass.lg.LogDebug("iiiicko " + i);
       ConfirmitClass.lg.LogDebug("iiiicko " + Config.Wave.Codes[i]);
       if (Config.Wave.Codes[i] != "") {
         wave.push(Config.Wave.Codes[i])
-      }
+      }*/
     }
     var X = [],
       Y = [];
@@ -41,6 +42,8 @@ class waveTest {
 
   static
   function testWaves2(report) {
+    var wave=[];
+    var errorLog;
     //  ConfirmitClass.lg.LogDebug("1111111111111");
     //var values = report.TableUtils.GetColumnValues('rr_overall:ResponseRate',1);
     ConfirmitClass.lg.LogDebug("start testWaves2 script");
@@ -50,9 +53,31 @@ class waveTest {
 
 
     var k;
-    ConfirmitClass.lg.LogDebug("pocet hodnot ve sloupci: " + waveValues.Count);
+    wave=getTrendIDs();
+    ConfirmitClass.lg.LogDebug("pocet hodnot ve sloupci: " + waveValues.length);
     for (var k = 0; k < waveValues.length; k++) {
-      ConfirmitClass.lg.LogDebug(waveValues[k].Value)
+      if(waveValues[k].Value==0){
+        if errorLog != undefined {
+          errorLog=errorLog + ", "
+        }
+        errorLog=errorLog + "Wave "
+
+
+      }
+    }
+
+    if errorLog != undefined {
+      errorLog=errorLog + " waves does not conatain any data."
+    }
+  }
+
+  static function getTrendIDs(){
+    var wave=[];
+    for (var i in Config.Wave.Codes) {
+      if (Config.Wave.Codes[i] != "") {
+        wave.push(Config.Wave.Codes[i])
+      }
+      return wave;
     }
   }
 
