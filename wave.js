@@ -1,7 +1,6 @@
 class waveTest {
 
-  static
-  function testWaves1(table, report) {
+  static  function testWaves1(table, report) {
     var wave = [];
     wave = getTrendIDs()
     /*for (var i in Config.Wave.Codes) {
@@ -40,8 +39,7 @@ class waveTest {
 
   }
 
-  static
-  function testWaves2(report) {
+  static  function testWaves2(report) {
     var wave=[];
     var errorLog;
     //  ConfirmitClass.lg.LogDebug("1111111111111");
@@ -69,7 +67,7 @@ class waveTest {
     if errorLog != undefined {
       errorLog=errorLog + " waves does not conatain any data."
     }
-  return errorLog;  
+  return errorLog;
   }
 
   static function getTrendIDs(){
