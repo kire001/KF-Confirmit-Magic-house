@@ -55,11 +55,13 @@ class waveTest {
     ConfirmitClass.lg.LogDebug("pocet hodnot ve sloupci: " + waveValues.length);
     for (var k = 0; k < waveValues.length; k++) {
       if(waveValues[k].Value==0){
-        if (errorLog != undefined) {
-          errorLog=errorLog + ", "
-        }
-        errorLog=errorLog + "Wave "
 
+        if (errorLog != undefined) {
+          error Log=errorLog + ", "
+        }
+
+        errorLog = errorLog + "Wave ";
+        ConfirmitClass.lg.LogDebug("errorlog =" + errorLog + "k:" +k);
 
       }
     }
