@@ -55,7 +55,7 @@ class waveTest {
     ConfirmitClass.lg.LogDebug("pocet hodnot ve sloupci: " + waveValues.length);
     for (var k = 0; k < waveValues.length; k++) {
       if(waveValues[k].Value==0){
-        if errorLog != undefined {
+        if (errorLog != undefined) {
           errorLog=errorLog + ", "
         }
         errorLog=errorLog + "Wave "
@@ -64,7 +64,7 @@ class waveTest {
       }
     }
 
-    if errorLog != undefined {
+    if (errorLog != undefined) {
       errorLog=errorLog + " waves does not conatain any data."
     }
   return errorLog;
