@@ -69,6 +69,7 @@ class waveTest {
     if errorLog != undefined {
       errorLog=errorLog + " waves does not conatain any data."
     }
+  return errorLog;  
   }
 
   static function getTrendIDs(){
