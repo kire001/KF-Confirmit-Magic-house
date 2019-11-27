@@ -67,7 +67,7 @@ class waveTest {
     }
 
     if (errorLog != undefined) {
-      errorLog=errorLog + " waves does not conatain any data."
+      errorLog="Wave " + errorLog + " does not conatain any data."
     }
   return errorLog;
   }
