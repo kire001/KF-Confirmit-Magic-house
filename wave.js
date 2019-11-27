@@ -30,8 +30,9 @@ class waveTest {
   ConfirmitClass.lg.LogDebug("tabulka vytvorena " +table.Name);
 
   //-----------------------------------------------------------------------
-
-   var datapoints = report.TableUtils.GetColumnValues(table.Name,0);
+var datapoints = table.ColumnHeaders;
+ConfirmitClass.lg.LogDebug("pocetSloupcu " + datapoints.Count);
+  /* var datapoints = report.TableUtils.GetColumnValues(table.Name,0);
      ConfirmitClass.lg.LogDebug("datapoints nacteny");
     //report.TableUtils.GetColumnValues('ResponseRate',1);
   //  var k;
