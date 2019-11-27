@@ -29,8 +29,8 @@ class waveTest {
 
       var datapoints =  table.GetColumnValues(table,0)
       var k;
-      log.LogDebug("pocet hodnot ve sloupci": " + datapoints.length);
+    ConfirmitClass.lg.LogDebug("pocet hodnot ve sloupci": " + datapoints.length);
       for (var k = 0; k < datapoints.length; k++)
-      log.LogDebug(datapoints[k])
+    ConfirmitClass.lg.LogDebug(datapoints[k])
       }
     }
